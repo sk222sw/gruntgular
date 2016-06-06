@@ -1,5 +1,5 @@
 /node_modules
-/dist
+; /dist cant be ignored or deployment to heroku wont work :(
 /.tmp
 /.sass-cache
 /bower_components
