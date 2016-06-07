@@ -8,10 +8,10 @@
  * Controller of the btaApp
  */
 angular.module('btaApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function (NgMap) {
+
+    NgMap.getMap().then(function(map) {
+      console.log(map.getCenter());
+    });
+
   });
